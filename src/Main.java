@@ -5,9 +5,15 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("Please provide the path to the FASTA file as an argument.");
+            return;
+        }
+
+        String filePath = args[0];
         try {
             // Load the FASTA file
-            File file = new File("Homo_sapiens_CD28_sequence.fa");
+            File file = new File(filePath);
             FileReader fileReader = new FileReader(file);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
 

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="NewWorld:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/NewWorld_jar</output-path>
+    <root id="archive" name="NewWorld.jar">
+      <element id="module-output" name="NewWorld" />
+      <element id="library" level="project" name="biojava-core-7.0.0" />
+    </root>
+  </artifact>
+</component>
